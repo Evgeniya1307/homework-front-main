@@ -2,8 +2,8 @@ import {CurrentUser} from './CurrentUser';
 import {UsersObjectType} from './HW2';
 
 type UserList2PropsType = {
-	users: UsersObjectType // пропиши типизацию
-	filterUsers: () => void; // пропиши типизацию
+	users: UsersObjectType ;
+	filterUsers: () => void; 
 };
 
 export const UserList2 = (props: UserList2PropsType) => {
