@@ -3,7 +3,7 @@ import {UsersObjectType} from './HW2';
 
 type UserList2PropsType = {
 	users: UsersObjectType ;
-	filterUsers: () => void; 
+	filterUsers: () => void; //функция которая не принимает аргументов и не возвращает значения
 };
 
 export const UserList2 = (props: UserList2PropsType) => {
