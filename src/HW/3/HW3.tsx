@@ -3,7 +3,7 @@ import { useState,ChangeEvent } from 'react';
 export const HW3 = () => {
   
 
-  const [currentText, setCurrentText] = useState('');//хранит тек знач текста в поле ввода
+  const [currentText, setCurrentText] = useState('');//хранит  знач текста в поле ввода
   const [texts, setTexts] = useState<string[]>([ //массив строк список задач
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
   ]);
