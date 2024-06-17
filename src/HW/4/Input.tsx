@@ -8,7 +8,7 @@ type InputPropsType = {
 
 export const Input: React.FC<InputPropsType> = (props) => {
   const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    props.setCurrentText(event.currentTarget.value); // Обновляем значение currentText
+    props.setCurrentText(event.currentTarget.value); // Обновляем  currentText
   };
 
   return (
