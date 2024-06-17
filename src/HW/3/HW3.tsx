@@ -13,7 +13,7 @@ export const HW3 = () => {
   };
   
 
-  const handleSave = () => {// при клике на кнопку "Сохранить
+  const handleSave = () => {
     if (currentText.trim() !== '') {
       setTexts([...texts, currentText]);
       setCurrentText('');

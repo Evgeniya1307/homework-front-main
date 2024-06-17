@@ -1,14 +1,17 @@
+
+import React from 'react';
+
 type InputPropsType = {
-	currentText: any // НУЖНО ПРОТИПИЗИРОВАТЬ
-	setCurrentText: any // НУЖНО ПРОТИПИЗИРОВАТЬ
+  currentText: string; // Протипизировано как string
+  setCurrentText: (value: string) => void; // Протипизировано как функция
 };
 
-export const Input = (props: InputPropsType) => {
-	const onChangeHandler = (event: 'НУЖНО ПРОТИПИЗИРОВАТЬ') => {
-		// НУЖНО ДОПИСАТЬ
-	};
+export const Input: React.FC<InputPropsType> = (props) => {
+  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    props.setCurrentText(event.currentTarget.value); // Обновляем значение currentText
+  };
 
-	// return (
-	//   <input id={'hw04-input'} type="text" value={props.currentText} onChange={onChangeHandler} />
-	// );
+  return (
+    <input id={'hw04-input'} type="text" value={props.currentText} onChange={onChangeHandler} />
+  );
 };
